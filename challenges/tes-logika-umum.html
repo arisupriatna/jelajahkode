@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simulasi Tes SPMB Mandiri</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- myStyle -->
+  <link rel="stylesheet" href="../../assets/css/myStyle.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="../../assets/font-awesome/css/font-awesome.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alice|Berkshire+Swash|Sirin+Stencil|Righteous" rel="stylesheet">
+
+  <style>
+    .check {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100%;
+    }
+
+    .check div {
+      height: 50px;
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand text-white" href="../index.html">JELAJAHKODE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="../index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item text-white">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle nav-link text-white" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Learning</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="../index.html">Terminal</a>
+              <a class="dropdown-item" href="../index.html">Github</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../challenges/challenges.html" class="nav-link text-white">Challenges</a>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../documentation/documentation.html" class="nav-link text-white">Documentation</a>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../challenges/tes-angka-cerita.html" class="nav-link text-white">Simulasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../about-us/about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://goo.gl/forms/lWWy82kg85qUMnaP2" class="nav-link text-white">Daftar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /navbar -->
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="card">
+
+          <h5 class="card-header bg-danger text-white">TES LOGIKA UMUM</h5>
+          <div class="card-body">
+            <ol>
+              <li>
+                <p>Azkia ingin menikah sebelum punya rumah. Ingin mendapatkan kerja sebelum menikah. Setelah dapat kerja ingin
+                  punya usaha sambilan. Ingin punya anak setelah punya rumah. Ingin menikah setelah punya usaha sambilan
+                  dan ingin punya usaha sambilan sebelum punya rumah. Manakah urutan yang tepat ?</p>
+                <input type="radio" name="question1" id="a1"> Dapat kerja - punya rumah - usaha sambilan - punya anak
+                <br>
+                <input type="radio" name="question1" id="b1"> Dapat kerja - nikah - usaha sambilan - punya rumah - punya anak
+                <br>
+                <input type="radio" name="question1" id="c1"> Usaha sambilan - dapat kerja - nikah - punya anak - punya rumah
+                <br>
+                <input type="radio" name="question1" id="d1"> Punya anak - nikah - dapat kerja - usaha sambilan - punya rumah
+                <br>
+                <input type="radio" name="question1" id="e1"> Dapat kerja - usaha sambilan - nikah - punya rumah - punya anak
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Kejujuran S tidak sebaik D. Terkadang M kurang jujur, tetapi dia sesungguhnya lebih jujur daripada R. B lebih suka berbohong daripada H. D cukup jujur, tetapi secara umum M lebih jujur daripada D dan sama jujurnya dengan K. D lebih jujur daripada H dan K. Siapakah diantara mereka yang paling jujur ?</p>
+                <input type="radio" name="question2" id="a2"> K
+                <br>
+                <input type="radio" name="question2" id="b2"> H
+                <br>
+                <input type="radio" name="question2" id="c2"> I
+                <br>
+                <input type="radio" name="question2" id="d2"> D
+                <br>
+                <input type="radio" name="question2" id="e2"> M
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Mustahil seorang wanita punya jenggot. Tidak setiap pria punya jenggot. A berada dikamar gelap dan hanya terlihat dagunya yang tidak berjenggot. Maka ...</p>
+                <input type="radio" name="question3" id="a3"> A bukan pria
+                <br>
+                <input type="radio" name="question3" id="b3"> Mustahil A adalah seorang pria
+                <br>
+                <input type="radio" name="question3" id="c3"> A pasti seorang pria
+                <br>
+                <input type="radio" name="question3" id="d3"> A pasti seorang wanita
+                <br>
+                <input type="radio" name="question3" id="e3"> A bisa jadi seorang pria atau wanita
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Semua sepeda memiliki lampu. Sebagian lampu berwarna merah.<p>
+                <input type="radio" name="question4" id="a4"> Semua sepeda memiliki lampu warna merah
+                <br>
+                <input type="radio" name="question4" id="b4"> Tidak semua lampu sepeda berwarna merah
+                <br>
+                <input type="radio" name="question4" id="c4"> Lampu merah bagian perlengkapan semua sepeda
+                <br>
+                <input type="radio" name="question4" id="d4"> Sebagian sepeda memiliki lampu berwarna merah
+                <br>
+                <input type="radio" name="question4" id="e4"> Tidak ada sepeda yang berlampu merah
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Retno adalah siswa yang paling pandai di kelasnya. Metria kalah pandai dibanding Asep. tetapi Asep sama pandainya dengan Mamat. Mamat lebih pandai dari Nisa.</p>
+                <input type="radio" name="question5" id="a5"> Asep tidak lebih pandai daripada Metria
+                <br>
+                <input type="radio" name="question5" id="b5"> Metria tidak kalah pandai daripada Retno
+                <br>
+                <input type="radio" name="question5" id="c5"> Mamat lebih pandai daripada Retno
+                <br>
+                <input type="radio" name="question5" id="d5"> Mamat lebih pandai daripada Metria
+                <br>
+                <input type="radio" name="question5" id="e5"> Anisa lebih pandai daripada Asep
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Semua penyanyi adalah artis. Sementara penyanyi adalah bintang film.<p>
+                <input type="radio" name="question6" id="a6"> Sementara bintang film adalah artis
+                <br>
+                <input type="radio" name="question6" id="b6"> Sementara artis adalah bukan penyanyi
+                <br>
+                <input type="radio" name="question6" id="c6"> Semua bintang film adalah artis
+                <br>
+                <input type="radio" name="question6" id="d6"> Sementara penyanyi bukan bintang film
+                <br>
+                <input type="radio" name="question6" id="e6"> Sementara penyanyi bukan artis
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Jika pernyataan "Semua dokter adalahh laki-laki" salah, maka:</p>
+                <input type="radio" name="question7" id="a7"> Sementara dokter adalah laki-laki
+                <br>
+                <input type="radio" name="question7" id="b7"> Sementara laki-laki adalah bukan dokter
+                <br>
+                <input type="radio" name="question7" id="c7"> Sementara dokter adalah bukan laki-laki
+                <br>
+                <input type="radio" name="question7" id="d7"> Tidak ada dokter yang bukan laki-laki
+                <br>
+                <input type="radio" name="question7" id="e7"> Tidak ada kesimpulan yang benar
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Semua siswa SSC yang belajar pasti lulus ujian seleksi PTN. Sebagian siswa SSC yang lulus ujian seleksi PTN ternyata tidak belajar.</p>
+                <input type="radio" name="question8" id="a8"> Semua siswa SSC belajar
+                <br>
+                <input type="radio" name="question8" id="b8"> Semua siswa SSC belajar dan lulus ujian seleksi PTN
+                <br>
+                <input type="radio" name="question8" id="c8"> Sebagian siswa SSC belajar dan lulus seleksi PTN
+                <br>
+                <input type="radio" name="question8" id="d8"> Sebagian siswa SSC yang tidak belajar tidak lulus ujian seleksi PTN
+                <br>
+                <input type="radio" name="question8" id="e8"> Sebagian siswa SSC yang tidak lulus seleksi PTN ternyata belajar 
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Badan kekar bukanlah alamiah. Nanan berbadan kekar, alami, dan sehat. Sehat belum tentu kekar.</p>
+                <input type="radio" name="question9" id="a9"> Nanan sehat dan kekar
+                <br>
+                <input type="radio" name="question9" id="b9"> Sehat adalah kekar
+                <br>
+                <input type="radio" name="question9" id="c9"> Sehat adalah alamiah
+                <br>
+                <input type="radio" name="question9" id="d9"> Sehat dan kekar adalah alamiah
+                <br>
+                <input type="radio" name="question" id="e"> Tidak dapat ditarik kesimpulan
+                <br>
+              </li>
+              <br>
+              <li>
+                <p>Tidak semua siswa yang pandai lulus Ujian Nasional (UN). Semua siswa yang bodoh tidak lulus ujian nasional. Tidak semua siswa yang pandai selalu mempunyai nilai ijazah yang lebih baik daripada yang bodoh. Budi mempunyai nilai ijazah lebih buruk daripada cecep. <p>
+                <input type="radio" name="question10" id="a10"> Cecep lebih baik daripada budi
+                <br>
+                <input type="radio" name="question10" id="b10"> Tidak mungkin budi akan lulus Ujian Nasional
+                <br>
+                <input type="radio" name="question10" id="c10"> Mungkin budi dan cecep akan lulus Ujian Nasional
+                <br>
+                <input type="radio" name="question10" id="d10"> Tidak mungkin budi dan cecep satu sekolah
+                <br>
+                <input type="radio" name="question10" id="e10"> Tidak mungkin cecep akan lulus Ujian Nasional
+                <br>
+              </li>
+            </ol>
+
+            <div class="check">
+              <div id="chk1"></div>
+              <div id="chk2"></div>
+              <div id="chk3"></div>
+              <div id="chk4"></div>
+              <div id="chk5"></div>
+            </div>
+
+            <br>
+
+            <a href="#" class="btn btn-primary" onclick="checkResult()">Submit</a>
+
+          </div>
+          <!-- card-body -->
+        </div>
+        <!-- card -->
+      </div>
+
+      <br>
+
+      <div class="col-lg-5">
+
+        <div class="card">
+          <h5 class="card-header bg-success text-white">Hasil</h5>
+          <div class="card-body">
+            <h5>
+              Jumlah Benar:
+              <h5 id="score"></h5>
+            </h5>
+            <h5>
+              Presentasi:
+              <h5 id="percentage"></h5>
+            </h5>
+            <h5>Kunci Jawaban:</h5>
+            <p id="jawaban"></p>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card text-white">
+          <h5 class="card-header bg-primary">Next Test</h5>
+          <div class="card-body text-center">
+            <ol class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="tes-acak-kata.html">Tes Acak Kata</a>
+              </li>
+              <li class="list-group-item">
+                <a href="tes-angka-cerita.html">Tes Angka Dalam Cerita</a>
+              </li>
+              <li class="list-group-item">
+                <a href="tes-antonim.html">Tes Antonim</a>
+              </li>
+              <li class="list-group-item">
+                <a href="tes-aritmatika-aljabar.html">Tes Aritmatika dan Konsep Aljabar</a>
+              </li>
+              <li class="list-group-item">
+                <a href="tes-deret-angka.html">Tes Deret Angka</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#">Tes Hitungan</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#">Tes Kolerasi Makna (Analogi Verbal)</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#">Tes Logika Umum</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card text-white">
+          <h5 class="card-header bg-warning">Diskusi</h5>
+          <div class="card-body">
+
+            <div id="disqus_thread"></div>
+
+          </div>
+        </div>
+
+
+      </div>
+      <!-- col-lg-5 -->
+
+    </div>
+  </div>
+
+  <br>
+
+  <!--Footer -->
+  <footer class="page-footer font-small indigo bg-primary pt-0">
+
+    <!-- Footer Links-->
+    <div class="container">
+
+      <!--First row-->
+      <div class="row">
+
+        <!--First column-->
+        <div class="col-md-12 py-5">
+
+          <div class="mb-5 text-center text-white">
+
+            <!--Facebook-->
+            <a class="fb-ic text-white" href="https://www.facebook.com/profile.php?id=100010804383796">
+              <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Medium -->
+            <a class="text-white" href="https://medium.com/@arisupriatna" target="_blank">
+              <i class="fa fa-medium fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <!--Google +-->
+            <a class="gplus-ic text-white" href="https://plus.google.com/u/0/118373014150443713337">
+              <i class="fa fa-google-plus fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin-->
+            <a class="li-ic text-white" href="https://www.linkedin.com/in/ari-s-08a85b130/">
+              <i class="fa fa-linkedin fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic text-white" href="https://www.instagram.com/arisupriatna1408/">
+              <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- github -->
+            <a class="text-white" href="https://github.com/arisupriatna14" target="_blank">
+              <i class="fa fa-github fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <!--/First column-->
+      </div>
+      <!--/First row-->
+    </div>
+    <!--/Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center text-white">
+      <small>
+        © 2018 Copyright:
+        <a href="https://www.explorecode.tk/" class="text-white"> jelajahkode. All Rights Reserved </a>
+        <br>
+        <a href="#" class="text-white">Privacy</a>
+      </small>
+    </div>
+    <!--/Copyright-->
+
+  </footer>
+  <!--/Footer-->
+
+
+  <!-- js bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- quiz -->
+  <script src="js/tesDeretAngka.js"></script>
+  <!-- Disqus -->
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://explorecode-tk.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</body>
+
+</html>

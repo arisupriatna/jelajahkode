@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belajar Terminal - jelajahkode</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- myStyle -->
+  <link rel="stylesheet" href="../../assets/css/myStyle.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="../../assets/font-awesome/css/font-awesome.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alice|Berkshire+Swash|Sirin+Stencil|Righteous" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand text-white" href="../../index.html">JELAJAHKODE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="../../index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item text-white">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle nav-link text-white" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Learning</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="../../index.html">Terminal</a>
+              <a class="dropdown-item" href="../../index.html">Github</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../../challenges/challenges.html" class="nav-link text-white">Challenges</a>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../../documentation/documentation.html" class="nav-link text-white">Documentation</a>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../../challenges/tes-angka-cerita.html" class="nav-link text-white">Simulasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../../about-us/about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://goo.gl/forms/lWWy82kg85qUMnaP2" class="nav-link text-white">Daftar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /navbar -->
+
+  <br>
+  <br>
+  <br>
+
+  <!-- Materi 1-->
+  <div class="container">
+    <div class="row">
+      <!-- post content column -->
+      <div class="col-lg-8">
+        <!-- judul materi -->
+        <h2>Kode Perintah Pada Terminal : Part 2</h2>
+
+        <!-- Author -->
+        <p class="lead">
+          By
+          <a href="https://www.facebook.com/profile.php?id=100010804383796">Ari Supriatna</a>
+        </p>
+        <hr>
+        <small class="text muted">Posted on April 5, 2018</small>
+        <hr>
+
+        <!-- alert -->
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>Hallo Coders!</strong> Sebelum belajar jangan lopa berdoa dulu ya!
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="card border-white">
+          <div class="card-header bg-info">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="#materi" id="materi-tab" data-toggle="tab" role="tab" aria-controls="materi" aria-selected="true">Materi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#diskusi" id="diskusi-tab" data-toggle="tab" role="tab" aria-controls="materi" aria-selected="false">Diskusi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body tab-content">
+            <div class="tab-pane fade show active" id="materi" role="tabpanel" aria-labelledby="materi-tab">
+              <p class="text-center">
+                <img src="../../assets/img/terminal 2.png" class="card-img-top" alt="" width="655" style="border-radius: 10px">
+              </p>
+              <br>
+
+              <p>
+                Assalamualaikum.wr.wb
+                <br> Selamat siang guys, pada kesempatan kali ini saya akan membahas kode perintah pada terminal diantaranya
+                copy, move, rename dan delete. Oh iya, sebelum lanjut ke materi, gimana sudah paham dengan materi sebelumnya?
+                mudah-mudahan sudah paham ya. Kalau sudah paham silahkan baca materi hari ini, jika belum silahkan buka materi
+                sebelumnya lagi, biar benar-benar paham.
+                <br> Oke guys, mari kita mulai belajar.
+                <br>
+                <ol>
+                  <li>
+                    <strong>copy</strong>
+                    <br> Untuk melakukan copy atau paste file atau folder, biasanya kita cukup klik kanan lalu klik copy atau
+                    paste, atau biasanya dengan shortcut CTRL+C dan CTRL+V pada keyboard. Tapi, kali ini kita akan melakukan
+                    copy paste pada terminal. Tentunya berbeda dengan yang disebutkan di atas. Untuk melakukan copy paste
+                    diterminal cukup mudah. Silahkan perhatikan gambar berikut.
+                    <br>
+                    <br>
+                    <img src="../../assets/img/terminal-cp.png" class="card-img-top img-rad" alt="terminal-cp.png">
+                    <br>
+                    <br> Pada gambar diatas, bisa dilihat cara copy paste pada terminal. cukup ketikkan perintah
+                    <strong>cp &lt;nama_file> &lt;folder_untuk_paste></strong>. Diatas, saya melakukan copy file dengan nama index.html
+                    dari folder latihan-terminal, dan file tersebut akan saya pastekan di folder Document, dimana folder
+                    Document tersebut terletak di /User/arisupriatna/Document. Gimana? mudah bukan?
+                  </li>
+                  <br>
+                  <li>
+                    <strong>mv : pindah file atau folder</strong>
+                    <br> Move bisa digunakan untuk memindahkan file, atau biasanya kita menggunakan perintah cut atau CTRL+X
+                    pada keyboard. Fungsinya sama saja, memindahkan file atau folder. Tapi move ini bisa digunakan untuk
+                    rename juga. Jadi move ini selain bisa untuk memindahkan file, bisa juga untuk mengganti nama file atau
+                    folder. Tetapi untuk kode perintahnya sedikit berbeda. Silahkan teman-teman perhatikan pada gambar berikut
+                    untuk melakukan pemindahan file.
+                    <br>
+                    <br>
+                    <img src="../../assets/img/terminal-mv.png" class="card-img-top img-rad" alt="terminal-mv.png">
+                    <br>
+                    <br> Pada gambar diatas, saya melakukan pemindahan file atau move file dengan nama file index.html dari folder
+                    latihan-terminal, yang akan di dipindahkan ke /User/arisupriatna. Untuk kode perintahnya hampir sama
+                    dengan kode perintah copy, hanya saja kode
+                    <strong>cp</strong> diganti dengan
+                    <strong>mv</strong>.
+                    <br>
+                  </li>
+                  <br>
+                  <li>
+                    <strong>mv : rename file atau folder</strong>
+                    <br> Kode mv kali ini digunakan untuk merename (ganti nama) file atau folder. Biasanya kita melakukan rename
+                    dengan cara klik kanan folder atau file, lalu klik rename, atau bisa juga dengan klik dua kali pada nama
+                    file atau foldernya. Tapi kali ini kita akan merename file atau folder melalui terminal. Silahkan teman-teman
+                    perhatikan pada gambar berikut untuk melakukan rename file melalui terminal.
+                    <br>
+                    <br>
+                    <img src="../../assets/img/terminal-rename.png" class="card-img-top img-rad" alt="terminal-rename.png">
+                    <br>
+                    <br> Pada gambar diatas, saya melakukan rename file dengan kode perintah
+                    <strong>mv &lt;nama_file_lama> &lt;nama_file_baru></strong>. Diatas, saya melakukan rename file index.html menjadi
+                    index2.html. Jadi index.html adalah nama file yang lama, dan index2.html adalah nama file yang baru.
+                  </li>
+                  <br>
+                  <li>
+                    <strong>rm : delete file</strong>
+                    <br>
+                    <strong>rm</strong> atau remove adalah kode perintah untuk menghapus file atau folder pada terminal. Biasanya
+                    kita menghapus file atau folder melalui tombol
+                    <strong>delete</strong> pada keyboard, atau klik kanan pada file lalu klik delete. Sekarang kita akan belajar
+                    menghapus file atau folder melalui terminal. Silahkan teman-teman perhatikan pada gambar berikut.
+                    <br>
+                    <br>
+                    <img src="../../assets/img/terminal-rm.png" alt="terminal-rm.png" class="card-img-top img-rad">
+                    <br>
+                    <br> Pada gambar diatas, saya menghapus file dengan kode perintah
+                    <strong>rm &lt;nama_file></strong>. Bisa teman-teman lihat pada gambar diatas, saya menghapus file dengan nama
+                    file index.html pada folder Documents. Oh iya, untuk menghapus folder, kode perintahnya sedikit berbeda
+                    dengan kode perintah untuk menghapus file. Silahkan teman-teman baca pada point selanjutnya.
+                  </li>
+                  <br>
+                  <li>
+                    <strong>rm : delete folder</strong>
+                    <br> Pada point diatas kita telah membahas bagaimana cara menghapus file melalui terminal. Pada point kali
+                    ini kita akan membahas bagaiaman cara menghapus folder melalui terminal. Karena untuk menghapus folder,
+                    kode perintahnya sedikit berbeda dengan kode perintah untuk menghapus file. Silahkan teman-teman perhatikan
+                    pada gambar dibawah ini.
+                    <br>
+                    <br>
+                    <img src="../../assets/img/terminal-rm-folder.png" alt="terminal-rm-folder.png" class="card-img-top img-rad">
+                    <br>
+                    <br> Pada gambar diatas, saya menghapus folder dengan kode perintah
+                    <strong>rm -d &lt;nama_folder></strong>. Pada kode diatas ada sedikit tambahan kode, yaitu
+                    <strong>-d</strong>, yang artinya directory. Pada gambar, saya melakukan hapus folder dengan nama
+                    <strong>latihan</strong> pada folder
+                    <strong>latihan-terminal.</strong>
+                  </li>
+                </ol>
+              </p>
+              Oke guys, itulah beberapa kode perintah pada terminal yang akan sering digunakan. Untuk materi kali ini, cukup sampai disini
+              saja. Apabila ada yang kurang paham,, silahkan komen di tab diskusi atau tanyakan pada grup WA. Terimakasih,
+              semoga bermanfaat. Sampai jumpa di materi selanjutnya ya guys. Good Luck. Happy Coding. :)
+            </div>
+
+            <div class="tab-pane fade" id="diskusi" role="tabpanel" aria-labelledby="diskusi-tab">
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /post content column -->
+
+      <!-- sidebar widgets column -->
+      <div class="col-md-4">
+
+        <!-- card widgets -->
+        <br>
+
+        <div class="card border-white text-white">
+          <h5 class="card-header bg-warning">Materi</h5>
+          <div class="card-body text-center">
+
+            <ol class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="../../materi-learning/learn-terminal/kode-perintah-pada-terminal.html">Belajar Terminal: Part 1</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../../materi-learning/learn-terminal/kode-perintah-pada-terminal-2.html" class="disabled">Belajar Terminal: Part 2</a>
+              </li>
+            </ol>
+
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card border-white text-white">
+          <h5 class="card-header bg-primary">Share</h5>
+          <div class="card-body">
+            <!-- share to facebook -->
+            <a href="http://www.facebook.com/share.php?u=http://explorecode.tk/materi-learning/learn-terminal/kode-perintah-pada-terminal-2.html"
+              target="_blank" class="text-primary">
+              <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"></i>
+              Facebook Share
+            </a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card border-white text-white">
+          <h5 class="card-header bg-success">Fanspage</h5>
+          <div class="card-body">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farisupriatna1408%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=759101494478395"
+              width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+              class="card-img-top"></iframe>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- col-md-4 -->
+      <!-- /sidebar widgets column -->
+    </div>
+  </div>
+  <!-- /container -->
+  <br>
+  <!-- Footer -->
+
+  <!--Footer-->
+
+  <br>
+
+  <!--Footer-->
+  <footer class="page-footer font-small bg-primary pt-0">
+
+    <!--Footer Links-->
+    <div class="container">
+
+      <!--First row-->
+      <div class="row">
+
+        <!--First column-->
+        <div class="col-md-12 py-5">
+
+          <div class="mb-5 text-center text-white">
+            <!--Facebook-->
+            <a class="fb-ic text-white" href="https://www.facebook.com/profile.php?id=100010804383796">
+              <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Medium -->
+            <a class="text-white" href="https://medium.com/@arisupriatna" target="_blank">
+              <i class="fa fa-medium fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <!--Google +-->
+            <a class="gplus-ic text-white" href="https://plus.google.com/u/0/118373014150443713337">
+              <i class="fa fa-google-plus fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin-->
+            <a class="li-ic text-white" href="https://www.linkedin.com/in/ari-s-08a85b130/">
+              <i class="fa fa-linkedin fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic text-white" href="https://www.instagram.com/arisupriatna1408/">
+              <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- github -->
+            <a class="text-white" href="https://github.com/arisupriatna14" target="_blank">
+              <i class="fa fa-github fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+          </div>
+
+        </div>
+        <!--/First column-->
+      </div>
+      <!--/First row-->
+    </div>
+    <!--/Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center text-white">
+      <small>
+        © 2018 Copyright:
+        <a href="https://www.explorecode.tk/" class="text-white"> jelajahkode. All Rights Reserved </a>
+        <br>
+        <a href="#" class="text-white">Privacy</a>
+      </small>
+    </div>
+    <!--/Copyright-->
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- js bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="../../assets/js/bootstrap.min.js"></script>
+  <!-- Disqus -->
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://explorecode-tk.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5aa81e3fd7591465c70887e7/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+</body>
+
+</html>

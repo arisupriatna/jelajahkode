@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz | Ricoders 2018</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <style>
+    .check {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100%;
+    }
+
+    .check div {
+      height: 50px;
+      width: 100%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-white" href="#">RILABS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link text-white" href="#">Tutorial</a>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../challenges/challenges.html" class="nav-link text-white">Challenges</a>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../documentation/documentation.html" class="nav-link text-white">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about-us/about-us.html">About Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- /navbar -->
+
+  <br><br><br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card">
+
+          <h5 class="card-header">Quiz Terminal</h5>
+          <div class="card-body">
+            <ol>
+              <li>
+                <p>Apa itu HTML ?</p>
+                <input type="radio" name="question1" id="op1"> Hypertext Markup Language <br>
+                <input type="radio" name="question1" id="op2"> Highlevel Markup Language <br>
+              </li>
+              <br>
+              <li>
+                <p>Apa itu CSS ?</p>
+                <input type="radio" name="question2" id="op3"> Code Complicated Style <br>
+                <input type="radio" name="question2" id="op4"> Cascading Style Sheet <br>
+              </li>
+              <br>
+              <li>
+                <p>Apakah Javascript itu case-sensitive?</p>
+                <input type="radio" name="question3" id="op5"> Ya <br>
+                <input type="radio" name="question3" id="op5"> Tidak <br>
+              </li>
+            </ol>
+
+            <div class="check">
+              <div id="chk1" style="margin-top: 100px"></div>
+              <div id="chk2" style="margin-top: 90px"></div>
+              <div id="chk3" style="margin-top: 80px"></div>
+              <div id="chk4" style="margin-top: 50px"></div>
+            </div>
+
+            <br>
+
+            <a href="#" class="btn btn-primary" onclick="checkResult()">Submit</a>
+            
+          </div> <!-- card-body -->
+        </div> <!-- card -->
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card">
+          <h5 class="card-header">Hasil</h5>
+          <div class="card-body">
+            <p id="score"></p>
+            <h1 id="percentage"></h1>
+
+            <div class="check">
+              <div id="chk5" style="margin-top: 70px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  <!-- js bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- quiz -->
+  <script src="quiz.js"></script>
+</body>
+</html>
