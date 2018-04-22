@@ -15,6 +15,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/prism.css">
   <!-- myStyle -->
   <link rel="stylesheet" href="../../assets/css/myStyle.css">
   <!-- font-awesome -->
@@ -29,7 +30,7 @@
 
   <!-- navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
-    <a class="navbar-brand text-white" href="../index.html">JELAJAHKODE</a>
+    <a class="navbar-brand text-white" href="../../index.html">JELAJAHKODE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -38,7 +39,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link text-white" href="../index.html">Home
+          <a class="nav-link text-white" href="../../index.html">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
@@ -47,22 +48,22 @@
             <a href="#" class="dropdown-toggle nav-link text-white" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">Learning</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="../index.html">Terminal</a>
-              <a class="dropdown-item" href="../index.html">Github</a>
+              <a class="dropdown-item" href="../../index.html">Terminal</a>
+              <a class="dropdown-item" href="../../index.html">Github</a>
             </div>
           </div>
         </li>
         <li class="nav-item text-white">
-          <a href="../challenges/challenges.html" class="nav-link text-white">Challenges</a>
+          <a href="../../challenges/challenges.html" class="nav-link text-white">Challenges</a>
         </li>
         <li class="nav-item text-white">
-          <a href="../documentation/documentation.html" class="nav-link text-white">Documentation</a>
+          <a href="../../documentation/documentation.html" class="nav-link text-white">Documentation</a>
         </li>
         <li class="nav-item text-white">
-          <a href="../challenges/tes-angka-cerita.html" class="nav-link text-white">Simulasi</a>
+          <a href="../../challenges/tes-angka-cerita.html" class="nav-link text-white">Simulasi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="../about-us/about-us.html">About Us</a>
+          <a class="nav-link text-white" href="../../about-us/about-us.html">About Us</a>
         </li>
         <li class="nav-item">
           <a href="https://goo.gl/forms/lWWy82kg85qUMnaP2" class="nav-link text-white">Daftar</a>
@@ -82,7 +83,7 @@
       <!-- post content column -->
       <div class="col-lg-8">
         <!-- judul materi -->
-        <h2>Membuat Repository Pertama</h2>
+        <h2>Konfigurasi Git</h2>
 
         <!-- Author -->
         <p class="lead">
@@ -118,12 +119,39 @@
                 <img src="../../assets/img/git-logo.png" alt="" width="250">
                 <img src="../../assets/img/github-logo.png" alt="" width="250">
               </p>
-              <h3>How to Install Git ?</h3>
+              <h3>Setup Git</h3>
               <p>
                 Assalamualaikum.wr.wb
+                <br> Selamat sore teman-teman coders, apa kabar? Semoga sehat selalu ya. Pada kesempatan kali ini kita akan belajar bagaimana cara setup git. Nah, setelah teman-teman sudah memiliki Git di sistem laptop/PC teman-teman, kita perlu melakukan beberapa hal untuk menyesuaikan lingkungan Git teman-teman. Jika di laptop/PC teman-teman belum menginstall Git nya, silahkan teman-teman download dan install terlebih dahulu, atau teman-teman bisa <a href="http://explorecode.tk/materi-learning/learn-git/installasi-git.html">klik disini</a> untuk cara penginstallannya. Oh iya teman-teman, kalian melakukan setup git ini hanya dilakukan sekali saja pada laptop/PC teman-teman, karena setup tersebut akan bertahan diantara peningkat versi. Teman-teman juga bisa mengubahnya dengan menjalankan perintahnya lagi. Oke, berikut kode perintah untuk setup git di laptop/PC. <br>
+                Hal pertama yang harus teman-teman lakukan adalah mengatur nama pengguna dan alamat email kalian. Ini sangat penting, karena setiap Git berkomitmen menggunakan ini, dan ini akan dipasang permanen kedalam commit yang kalian mulai buat. 
+                <pre>
+                  <code class="language-bash">
+$ git config --global user.name "user name github kalian"
+$ git config --global user.email "email github kalian"
+                  </code>
+                </pre> <br>
+                Silahkan teman-teman isi dengan user dan email yang benar dan sesuai dengan akun github kalian. <br>
+                Jika teman-teman ingin memeriksa konfigurasinya, teman-teman bisa menggunakan kode perintah berikut : <br>
+                <pre>
+                  <code class="language-bash">
+$ git config --list
+                  </code>
+                </pre>
+                Dengan menjalankan kode perintah tersebut, maka teman-teman bisa melihat pengaturan yang dapat ditemukan oleh Git. <br> Contoh: <br>
+                <pre>
+                  <code class="language-bash">
+$ git config --list
+user.name = Ari Supriatna
+user.email= arisupriatna@jelajahkode.com
+color.status = auto
+color.branch = auto
+color.interactive = auto
+color.diff = auto
+...
+                  </code>
+                </pre>
                 <br>
-                Selamat sore teman-teman coders, apa kabar? Semoga sehat selalu ya. Pada kesempatan kali ini kita akan belajar membuat repository repository pertama di github. Mungkin temen-temen juga sudah ada yang buatnya, atau ada juga yang belum. Tapi sebelum melanjutkan belajarnya, apakah git teman-teman sudah dikonfigurasi ? Jika belum silahkan teman-teman konfigurasi terlebih dahulu ya. Jika teman-teman sudah melakukannya, silahkan simak step-step berikut. 
-                
+                Oke teman-teman, untuk pertemuan kali ini sampai disini, mohon maaf apabila ada kesalahan. Apabila teman-teman ada yang kurang paham, silahkan tanyakan di tab diskusi atau melalui grup wa. Terimakasih. Good Luck guys. :)
               </p>
             </div>
 
@@ -145,20 +173,20 @@
           <h5 class="card-header bg-warning">Materi</h5>
           <div class="card-body text-center">
 
-              <ol class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <a href="http://explorecode.tk/materi-learning/learn-git/berkenalan-dengan-git-dan-github.html">Berkenalan dengan Git dan Github</a>
-                </li>
-                <li class="list-group-item">
-                  <a href="http://explorecode.tk/materi-learning/learn-git/installasi-git.html">Installasi Git</a>
-                </li>
-                <li class="list-group-item">
-                  <a href="http://explorecode.tk/materi-learning/learn-git/daftar-akun-github.html">Daftar Akun Github</a>
-                </li>
-                <li class="list-group-item">
-                  <a href="http://explorecode.tk/materi-learning/learn-git/configuration-git.html">Konfigurasi Git</a>
-                </li>
-              </ol>
+            <ol class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="http://explorecode.tk/materi-learning/learn-git/berkenalan-dengan-git-dan-github.html">Berkenalan dengan Git dan Github</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://explorecode.tk/materi-learning/learn-git/installasi-git.html">Installasi Git</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://explorecode.tk/materi-learning/learn-git/daftar-akun-github.html">Daftar Akun Github</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://explorecode.tk/materi-learning/learn-git/configuration-git.html">Konfigurasi Git</a>
+              </li>
+            </ol>
 
           </div>
         </div>
@@ -169,7 +197,7 @@
           <h5 class="card-header bg-primary">Share</h5>
           <div class="card-body">
             <!-- share to facebook -->
-            <a href="http://www.facebook.com/share.php?u=http://explorecode.tk/materi-learning/learn-git/installasi-git.html" target="_blank"
+            <a href="http://www.facebook.com/share.php?u=http://explorecode.tk/materi-learning/learn-git/configuration-git.html" target="_blank"
               class="text-primary">
               <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"></i>
               Facebook Share
@@ -263,6 +291,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/prism.js"></script>
 </body>
 
 </html>
