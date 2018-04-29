@@ -15,6 +15,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/prism.css">
   <!-- myStyle -->
   <link rel="stylesheet" href="../../assets/css/myStyle.css">
   <!-- font-awesome -->
@@ -91,7 +92,7 @@
           <a href="#">Ari Supriatna</a>
         </p>
         <hr>
-        <small class="text muted">Posted on April 22, 2018</small>
+        <small class="text muted">Posted on April 29, 2018</small>
         <hr>
 
         <!-- alert -->
@@ -119,12 +120,91 @@
                 <img src="../../assets/img/git-logo.png" alt="" width="250">
                 <img src="../../assets/img/github-logo.png" alt="" width="250">
               </p>
-              <h3>How to Install Git ?</h3>
+              <h3>Membuat Repository Pertama</h3>
               <p>
                 Assalamualaikum.wr.wb
                 <br>
-                Selamat sore teman-teman coders, apa kabar? Semoga sehat selalu ya. Pada kesempatan kali ini kita akan belajar membuat repository repository pertama di github. Mungkin temen-temen juga sudah ada yang buatnya, atau ada juga yang belum. Tapi sebelum melanjutkan belajarnya, apakah git teman-teman sudah dikonfigurasi ? Jika belum silahkan teman-teman konfigurasi terlebih dahulu ya. Jika teman-teman sudah melakukannya, silahkan simak step-step berikut. 
-                
+                Selamat siang teman-teman. Pada tutorial kali ini saya akan membahas bagaimana cara membuat repository di git. Mungkin sebagian teman-teman ada yang sudah membuatnya atau juga ada yang belum. Bagi yang belum, tutorial kali ini tepat sekali untuk teman-teman yang baru belajar. Karena disini akan dijelaskan secara step by step. Jadi teman-teman tidak akan kebingungan. Oh iya, teman-teman tahu tidak apa itu repository? Jadi, repository itu wadah atau tempat kalian menyimpan projectnya, kalau di laptop itu istilahnya sebagai foldernya. Jadi didalam folder itu yang akan menjadi tempat file-file project teman-teman. Karena di github tidak bisa langsung menyimpan begitu saja. Harus ada wadahnya, yaitu tadi repository. Oke, langsung aja teman-teman, kali ini kita akan membuat repository baru di git. 
+                <ol>
+                  <li>
+                    <strong>Git init</strong><br>
+                    Silahkan teman-teman buat terlebih dahulu dahulu folder di local, atau bisa menggunakan terminal dengan cara <strong>mkdir &lt;namaFolder></strong>. Setelah teman-teman membuat folder di local, lalu masuk kedalam foldernya melalu terminal, dengan cara <strong>cd &lt;namaFolder></strong>, oh iya bagi teman-teman yang belum tahu kode perintah di terminal, silahkan pelajari dulu kode perintahnya atau teman-teman juga bisa baca tutorialnya <a href="http://explorecode.tk/materi-learning/learn-terminal/kode-perintah-pada-terminal.html">disini.</a>
+                    Nah, setelah teman-teman sudah berada di folder yang teman-teman buat, sekarang lakukan inisialisai, dengan kode perintah berikut: <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-init2.png" class="card-img-top" alt=""> <br>
+                    Apabila teman-teman sudah melakukan inisialisai, maka akan tampil seperti pada gambar.
+                  </li>
+                  <br>
+                  <li>
+                    <strong>Create Repository</strong><br>
+                    Setelah teman-teman membuat folder di local, sekarang teman-teman buat repository di github. Saran saya buat namanya sama seperti di folder local, agar teman-teman tidak bingung. <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/create-repository-github.png" alt="" class="card-img-top"><br>
+                    Pada gambar saya membuat repositorynya sama seperti pada folder local saya. Untuk description itu optional bisa di isi atau tidak, sesuai kebutuhan teman-teman. Lalu pilih bagian Public, karena kalau private itu harus bayar perbulan, jika teman-teman mau repositorynya private silahkan teman-teman pilih bagian private. Yang terakhir klik button Create repository. <br>
+                    Jika berhasil, maka akan tampil seperti berikut: <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-remote.png" class="card-img-top" alt="">
+                  </li>
+                  <br>
+                  <li>
+                    <strong>Git remote</strong>
+                    Sekarang lakukan git remote pada folder teman-teman, dengan kode perintah pada gambar diatas bagian kolom ke 2. <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-remote-terminal.png" class="card-img-top" alt=""><br>
+                    Setiap membuat repository baru, kita harus melakukan git remote. 
+                  </li>
+                  <br>
+                  <li>
+                    <strong>Add files</strong><br>
+                    Selanjutnya, teman-teman tambahkan file baru di dalam folder yang sudah teman-teman buat. Misalnya kita menambahkan file index.html. <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-new-file.png" class="card-img-top" alt=""> <br>
+                    Untuk isinya, silahkan isi dengan html, bebas. Atau teman-teman bisa copy paste kode berikut: <br>
+                    <pre>
+                      <code class="language-html">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+  &lt;meta charset="UTF-8">
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
+  &lt;title>Document&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;h1> Ini adalah file project pertamaku &lt;/h1>
+&lt;/body>
+&lt;/html>
+                      </code>
+                    </pre>
+                  </li>
+                  <br>
+                  <li>
+                    <strong>Git add</strong><br>
+                    Setelah teman-teman menambahkan file baru, sekarang kita add file tersebut, dengan kode berikut. <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-add.png" class="card-img-top" alt=""> <br>
+                    Git add ini digunakan untuk menambahkan file yang akan kita simpan ke repository. 
+                  </li>
+                  <br>
+                  <li>
+                    <strong>Git status</strong><br>
+                    Untuk melihat apakah file kita sudah di add atau belum, teman-teman bisa menggunakan kode perintah berikut. <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-status-2.png" class="card-img-top" alt=""><br>
+                    Nah, jika file kita sudah ter add maka akan tampil seperti pada gambar, warna textnya menjadi hijau. Jika belum melakukan add, maka akan tampil seperti berikut. <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-status.png" class="card-img-top" alt=""><br>
+                    Bisa teman-teman lihat, jika filenya belum kita add, akan pada textnya berwarna merah, artinya belum kita add. Jika sudah maka akan tampil seperti pada gambar di atas.
+                  </li>
+                  <br>
+                  <li>
+                    <strong>Git commit</strong><br>
+                    Selanjutnya kita commit filenya. Apa sih commit itu? jadi commit itu istilahnya memberikan pesan pada file project kita. Misalkan teman-teman membuat Aplikasi, nah pasti akan ada perubahan dong,misal menambahkan fitur something, atau apapun itu, melakukan modifikasi, dan lain-lain. Jadi fungsi commit itu memberitahu kepada kita kalau kita melakukan modifikasi, misalnya dengan pesan "update aplikasi" atau "add new fiture" dan lain-lain, yang jelas memberi pesan untuk mengingatkan kita, bahwa kita telah memodifikasinya. Nah, bagaimana cara melakukan hal tersebut, baik berikut kode perintahnya untuk melakukan commit. <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-commit.png" class="card-img-top" alt=""><br>
+                    Pada gambar, saya melakukan commit dengan pesan "First Project", hal itu menandakan itu adalah project pertama saya. 
+                  </li>
+                  <br>
+                  <li>
+                    <strong>Git push</strong>
+                    Nah, ini adalah langkah terakhir, yaitu git push. Git push ini yaitu proses upload ke github. Untuk kode perintahnya sebagai berikut. <br>
+                    <img src="https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-push.png" class="card-img-top" alt=""><br>
+                    Dan akhirnya, repository berhasil dibuat. Selamat :D
+                  </li>
+                </ol> 
+                <br>
+                Gimana teman-teman caranya mudah bukan? Nah, sekarang teman-teman berhasil membuat repository baru di github. Terimakasih sudah mengikuti tutorial ini dari awal hingga akhir, semoga bermanfaat. Jika ada yang kebingungan atau apapun itu, silahkan comment di tab diskusi atau hubungi saya langsung. Good Luck. :)P
               </p>
             </div>
 
@@ -264,6 +344,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/prism.js"></script>
 </body>
 
 </html>
