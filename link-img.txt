@@ -1,0 +1,29 @@
+1. image create repository github: https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/create-repository-github.png
+
+2. git add : https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-add.png
+
+3. git commit: 
+https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-commit.png
+
+4. git-github-repo: https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-github-repo.png
+
+5. git new file:
+https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-new-file.png
+
+6. git push:
+https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-push.png
+
+7. git remote  terminal
+https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-remote-terminal.png
+
+8. git remote:
+https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-remote.png
+
+9. git status 2:
+https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-status-2.png
+
+10. git status:
+https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-status.png
+
+11. git add:
+https://raw.githubusercontent.com/arisupriatna/jelajahkode/master/assets/img/git-add.png

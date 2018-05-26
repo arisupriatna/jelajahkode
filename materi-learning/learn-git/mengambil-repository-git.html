@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#00aeff">
+
+  <title>Belajar Github - jelajahkode</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/prism.css">
+  <!-- myStyle -->
+  <link rel="stylesheet" href="../../assets/css/myStyle.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="../../assets/font-awesome/css/font-awesome.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alice|Berkshire+Swash|Sirin+Stencil|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand text-white" href="index.html" style="font-family: 'Lobster Two', cursive;">JelajahKode</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="../index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item text-white">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle nav-link text-white" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Learning</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="http://explorecode.tk/category/kategori-terminal.html">Terminal</a>
+              <a class="dropdown-item" href="http://explorecode.tk/category/kategori-git-dan-github.html">Github</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../challenges/challenges.html" class="nav-link text-white">Challenges</a>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../documentation/documentation.html" class="nav-link text-white">Documentation</a>
+        </li>
+        <li class="nav-item text-white">
+          <a href="../challenges/tes-angka-cerita.html" class="nav-link text-white">Simulasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../about-us/about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://goo.gl/forms/lWWy82kg85qUMnaP2" class="nav-link text-white">Daftar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /navbar -->
+
+  <br>
+  <br>
+  <br>
+
+  <!-- Materi 1-->
+  <div class="container">
+    <div class="row">
+      <!-- post content column -->
+      <div class="col-lg-8">
+        <!-- judul materi -->
+        <h2>Membuat Repository Pertama</h2>
+
+        <!-- Author -->
+        <p class="lead">
+          With
+          <a href="#">Ari Supriatna</a>
+        </p>
+        <hr>
+        <small class="text muted">Posted on May, 04 2018</small>
+        <hr>
+
+        <!-- alert -->
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>Hallo Coders!</strong> Sebelum belajar jangan lopa berdoa dulu ya!
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="card border-white">
+          <div class="card-header bg-info">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="#materi" id="materi-tab" data-toggle="tab" role="tab" aria-controls="materi" aria-selected="true">Materi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#diskusi" id="diskusi-tab" data-toggle="tab" role="tab" aria-controls="materi" aria-selected="false">Diskusi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body tab-content">
+            <div class="tab-pane fade show active" id="materi" role="tabpanel" aria-labelledby="materi-tab">
+              <p class="text-center">
+                <img src="../../assets/img/git-logo.png" alt="" width="250">
+                <img src="../../assets/img/github-logo.png" alt="" width="250">
+              </p>
+              <h3>Mengambil Repository Git</h3>
+              <p>
+                Assalamualaikum.wr.wb <br>
+                Selamat malam teman-teman. Pada tutorial kali ini saya akan membahas bagaimana cara mengambil repository git. Nah, sebelum dilanjutkan, saya ingin bertanya sama teman-teman dulu nih, Kenapa kita harus mengambil repository git? Jawabannya sederhana, yaitu untuk membuat salinan project kita ketika project kita di local ke hapus. Jadi teman-teman bisa mengambil repository yang telah kita buat di git. Bagaimana caranya? Caranya simple kok teman-teman. Teman-teman cukup menggunakan kode perintah `git clone`. Untuk setiap versi dari setiap berkas yang tercatat dalam history dari proyek tersebut akan ditarik ketika teman-teman menjalankan `git clone`. Bahkan, ketika cakram di server teman-teman rusak, teman-teman masih dapat menggunakan hasil duplikasi di klien untuk mengembalikan server teman-teman ke keadaan tepat pada saat duplikasi dibuat (Teman-teman mungkin kehilangan beberapa hooks atau sejenisnya yang sebelumnya telah ditata di sisi server, namun semua versi data sudah kembali seperti sediakala. <br>
+                Teman-teman menduplikasi sebuah repositori menggunakan perintah `git clone [url]`. Sebagai contoh, jika teman-teman ingin menduplikasi repository kemarin yang telah kita buat, teman-teman dapat melakukannya sebagai berikut:
+                <ol>
+                  <li>
+                    Buka github teman-teman, lalu klik button hijau dengan tulisan "clone or download", seperti pada gambar berikut. <br>
+                    <img src="../../assets/img/git-clone.png" class="card-img-top" alt="">
+                    <br>
+                    Lalu teman-teman salin url pada kotak dialog tersebut.
+                  </li>
+                  <li>
+                    Selanjutnya, teman-teman buka terminal dan tentukan foldernya, dimana teman-teman mau menyimpan hasil duplikasi repositorinya, dan setelah menentukan foldernya, teman-teman ketikan kode perintah berikut.
+                    <pre>
+                      <code class="language-bash">
+git clone [url]
+
+contoh :
+git clone https://github.com/arisupriatna/first-repository.git
+                      </code>
+                    </pre>
+
+                    Silahkan teman-teman ganti text url dengan url yang telah disalin atau di copy oleh teman-teman. Setelah selesai, silahkan teman-teman masuk ke folder hasil clone nya. Selesai.
+                  </li>
+                </ol>
+                Gimana teman-teman mudah bukan?
+                Oke teman-teman, untuk tutorial kali ini cukup sampai disini dulu. Semoga bermanfaat. Good luck :)
+              </p>
+            </div>
+
+            <div class="tab-pane fade" id="diskusi" role="tabpanel" aria-labelledby="diskusi-tab">
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /post content column -->
+
+      <!-- sidebar widgets column -->
+      <div class="col-md-4">
+
+        <!-- card widgets -->
+        <br>
+
+        <div class="card text-white border-white">
+          <h5 class="card-header bg-warning">Materi</h5>
+          <div class="card-body text-center">
+
+            <ol class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="http://explorecode.tk/materi-learning/learn-git/berkenalan-dengan-git-dan-github.html">Berkenalan dengan Git dan Github</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://explorecode.tk/materi-learning/learn-git/installasi-git.html">Installasi Git</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://explorecode.tk/materi-learning/learn-git/daftar-akun-github.html">Daftar Akun Github</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://explorecode.tk/materi-learning/learn-git/configuration-git.html">Konfigurasi Git</a>
+              </li>
+            </ol>
+
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card text-white border-white">
+          <h5 class="card-header bg-primary">Share</h5>
+          <div class="card-body">
+            <!-- share to facebook -->
+            <a href="http://www.facebook.com/share.php?u=http://explorecode.tk/materi-learning/learn-git/installasi-git.html" target="_blank"
+              class="text-primary">
+              <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"></i>
+              Facebook Share
+            </a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card text-white border-white">
+          <h5 class="card-header bg-success">Fanspage</h5>
+          <div class="card-body">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farisupriatna1408%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=759101494478395"
+              width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+              class="card-img-top"></iframe>
+          </div>
+        </div>
+
+      </div>
+      <!-- col-md-4 -->
+      <!-- /sidebar widgets column -->
+    </div>
+  </div>
+  <!-- /container -->
+
+  <br>
+
+  <!--Footer -->
+  <footer class="page-footer font-small indigo bg-primary pt-0">
+
+    <!-- Footer Links-->
+    <div class="container">
+
+      <!--First row-->
+      <div class="row">
+
+        <!--First column-->
+        <div class="col-md-12 py-5">
+
+          <div class="mb-5 text-center text-white">
+
+            <!--Facebook-->
+            <a class="fb-ic text-white" href="https://www.facebook.com/profile.php?id=100010804383796">
+              <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Medium -->
+            <a class="text-white" href="https://medium.com/@arisupriatna" target="_blank">
+              <i class="fa fa-medium fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <!--Google +-->
+            <a class="gplus-ic text-white" href="https://plus.google.com/u/0/118373014150443713337">
+              <i class="fa fa-google-plus fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin-->
+            <a class="li-ic text-white" href="https://www.linkedin.com/in/ari-s-08a85b130/">
+              <i class="fa fa-linkedin fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic text-white" href="https://www.instagram.com/arisupriatna1408/">
+              <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- github -->
+            <a class="text-white" href="https://github.com/arisupriatna14" target="_blank">
+              <i class="fa fa-github fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <!--/First column-->
+      </div>
+      <!--/First row-->
+    </div>
+    <!--/Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center text-white">
+      <small>
+        © 2018 Copyright:
+        <a href="https://www.explorecode.tk/" class="text-white"> jelajahkode.com. All Rights Reserved </a>
+        <br>
+        <a href="privacy/privacy.html" class="text-white">Privacy</a>
+      </small>
+    </div>
+    <!--/Copyright-->
+
+  </footer>
+  <!--/Footer-->
+
+  <!-- js bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/prism.js"></script>
+</body>
+
+</html>
